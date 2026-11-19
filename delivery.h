@@ -12,4 +12,17 @@ typedef struct {
     int situacao;       /* 1 cozinha, 2 embalado, 3 saiu, 4 cancelado */
 } Pedido;
 
+void inicializarSistema(void);
+int getQtdCozinha(void);
+int getQtdPrateleira(void);
+
+void registrarPedido(void);      /* RF01 */
+void exibirSituacao(void);       /* RF02 */
+void embalarProximo(void);       /* RF03 */
+void despacharEntrega(void);     /* RF04 */
+void cancelarPedido(void);       /* RF05 */
+void desfazerCancelamento(void); /* RF06 */
+void relatorioOrdenado(void);    /* RF07 */
+void bateriaAnalise(void);       /* RF08 */
+
 #endif
